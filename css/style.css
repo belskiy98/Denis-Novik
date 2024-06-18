@@ -1,0 +1,30 @@
+:root,
+[data-theme="light"] {
+    --bg-color: #FFF;
+    --bg-secondary-color: #F6F6F6;
+    --text-color: #070707;
+    --text-secondary-color: #828282;
+    --seporator-color: #828282;
+}
+
+body {
+    --base-font-size: 18px;
+    --base-line-height: 22px;
+    --base-font-weight: 400;
+    --base-font-style: normal;
+    --default-transition: all 300ms ease;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    font-size: var(--base-font-size);
+    line-height: var(--base-line-height);
+    font-weight: var(--base-font-weight);
+    font-style: var(--base-font-style);
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: var(--default-transition);
+}
