@@ -73,3 +73,50 @@ html, body {
     color: var(--text-color);
 }
 
+.hero {
+    padding-top: 40px;
+    padding-bottom: 104px;
+}
+
+.introduction-block {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-bottom: 50px;
+}
+
+.introduction-block h1 {
+    margin: 0;
+    flex-shrink: 0;
+    font-size: 48px;
+    line-height: 59px;
+}
+
+.introduction__info,
+.introduction__language {
+    margin-bottom: 5px;
+}
+
+.language-select {
+    display: flex;
+    font-size: 16px;
+    font-weight: bold;
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+}
+
+.language-select__item a {
+    text-decoration: none;
+    color: var(--text-secondary-color);
+}
+
+.language-select__item_active a {
+    color: var(--text-color);
+}
+
+.introduction-img-desc {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 945 /388;
+}
