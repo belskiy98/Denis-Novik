@@ -268,3 +268,39 @@ html, body {
 .portfolio__link a:hover {
     color: var(--text-secondary-color);
 }
+
+.contacts {
+    padding-top: 107px;
+    padding-bottom: 90px;
+}
+
+.contacts-row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.contacts__text {
+    text-align: center;
+}
+
+.send__btn {
+    padding: 13px 30px 13px 30px;
+    font-weight: bold;
+    border: none;
+    border-radius: 25px;
+    color: var(--bg-color);
+    background-color: var(--fill-star-active);
+    transition: var(--default-transition);
+}
+
+.send__btn:hover {
+    color: var(--text-color);
+    outline: 1px solid var(--fill-star-active);
+    background-color: var(--bg-color);
+}
+
+.send__btn:active {
+    transform: scale(98%);
+}
