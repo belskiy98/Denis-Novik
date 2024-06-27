@@ -304,3 +304,26 @@ html, body {
 .send__btn:active {
     transform: scale(98%);
 }
+
+.social {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.social-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 60px;
+}
+
+.social__item img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: auto 41 / 41;
+    transition: var(--default-transition);
+}
+
+.social__item img:hover {
+    transform: scale(104%);
+}
