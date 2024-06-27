@@ -327,3 +327,32 @@ html, body {
 .social__item img:hover {
     transform: scale(104%);
 }
+
+.footer {
+    padding-top: 16px;
+    padding-bottom: 123px;
+}
+
+.footer-link {
+    text-align: center;
+    font-size: 14px;
+    line-height: 17px;
+    color: var(--seporator-color);
+}
+
+.footer-link__block {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5px;
+}
+
+.footer__item {
+    text-decoration: none;
+    color: var(--seporator-color);
+    transition: var(--default-transition);
+}
+
+.footer__item:hover {
+    color: var(--text-color);
+}
