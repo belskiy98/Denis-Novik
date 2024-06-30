@@ -43,6 +43,71 @@ html, body {
     padding-right: 30px;
 }
 
+.mobile-menu {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    padding: 60px 26px 60px 30px;
+    background: var(--bg-color);
+    box-shadow: var(--hover-shadow);
+}
+
+.mobile-menu.visible {
+    display: block;
+}
+
+.mobile-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 150px;
+    min-height: 500px;
+}
+
+.mobile-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 0;
+    margin: 0;
+    font-size: 30px;
+    line-height: 42px;
+}
+
+.mobile-nav li {
+    list-style-type: none;
+}
+
+.mobile-nav .nav__item {
+    white-space: nowrap;
+}
+
+.mobile-menu-controls {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.mobile-menu-controls > .language-select {
+    font-size: 30px;
+    line-height: 42px;
+    transform: none;
+}
+
+#close-menu-btn {
+    padding: 0;
+    border: none;
+    background-color: var(--bg-color)
+}
+
+#close-menu-btn svg {
+    width: 33px;
+    height: auto;
+    fill: var(--fill-star-active);
+}
+
 .header-row {
     padding: 20px 0;
     border-bottom: 1px solid var(--seporator-color);
@@ -79,6 +144,22 @@ html, body {
 .hero {
     padding-top: 40px;
     padding-bottom: 104px;
+}
+
+#open-menu-btn {
+    position: absolute;
+    right: 30px;
+    top: 66px;
+    display: none;
+    padding: 0;
+    border: none;
+    background-color: var(--bg-color)
+}
+
+#open-menu-btn svg {
+    width: 33px;
+    height: auto;
+    fill: var(--fill-star-active);
 }
 
 .introduction-block {
@@ -325,6 +406,10 @@ html, body {
     gap: 60px;
 }
 
+.social__item {
+    flex-shrink: 0;
+}
+
 .social__item img {
     width: 100%;
     height: auto;
@@ -365,6 +450,14 @@ html, body {
     color: var(--text-color);
 }
 
+/* mobile menu */
+
+@media screen and (max-width: 370px) {
+    .mobile-row {
+        gap: 50px;
+    }
+}
+
 /* header */
 
 @media screen and (max-width: 768px) {
@@ -379,6 +472,10 @@ html, body {
     .hero {
         padding-top: 65px;
         padding-bottom: 81px;
+    }
+
+    #open-menu-btn {
+        display: block;
     }
 
     .introduction-block {
@@ -499,6 +596,13 @@ html, body {
     .social-row {
         justify-content: space-between;
         gap: 41px;
+    }
+}
+
+@media screen and (max-width: 348px) {
+    .social-row {
+        flex-wrap: wrap;
+        gap: 15px;
     }
 }
 
